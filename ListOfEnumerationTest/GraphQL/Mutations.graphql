@@ -1,3 +1,0 @@
-﻿mutation SetDaysOfWeek {
-  setDaysOfWeek(days: [SUNDAY, TUESDAY])
-}

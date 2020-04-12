@@ -20,17 +20,17 @@ namespace ListOfEnumerationTest
             _executor = executorPool.CreateExecutor(_clientName);
         }
 
-        public global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<global::ListOfEnumerationTest.ISetDaysOfWeek>> SetDaysOfWeekAsync(
+        public global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<global::ListOfEnumerationTest.ISimpleQuery>> SimpleQueryAsync(
             global::System.Threading.CancellationToken cancellationToken = default)
         {
 
             return _executor.ExecuteAsync(
-                new SetDaysOfWeekOperation(),
+                new SimpleQueryOperation(),
                 cancellationToken);
         }
 
-        public global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<global::ListOfEnumerationTest.ISetDaysOfWeek>> SetDaysOfWeekAsync(
-            SetDaysOfWeekOperation operation,
+        public global::System.Threading.Tasks.Task<global::StrawberryShake.IOperationResult<global::ListOfEnumerationTest.ISimpleQuery>> SimpleQueryAsync(
+            SimpleQueryOperation operation,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             if (operation is null)

@@ -10,11 +10,11 @@ namespace ListOfEnumerationTest
     [System.CodeDom.Compiler.GeneratedCode("StrawberryShake", "11.0.0")]
     public partial interface IEnumTestClient
     {
-        Task<IOperationResult<global::ListOfEnumerationTest.ISetDaysOfWeek>> SetDaysOfWeekAsync(
+        Task<IOperationResult<global::ListOfEnumerationTest.ISimpleQuery>> SimpleQueryAsync(
             CancellationToken cancellationToken = default);
 
-        Task<IOperationResult<global::ListOfEnumerationTest.ISetDaysOfWeek>> SetDaysOfWeekAsync(
-            SetDaysOfWeekOperation operation,
+        Task<IOperationResult<global::ListOfEnumerationTest.ISimpleQuery>> SimpleQueryAsync(
+            SimpleQueryOperation operation,
             CancellationToken cancellationToken = default);
     }
 }
