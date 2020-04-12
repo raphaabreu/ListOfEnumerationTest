@@ -1,0 +1,29 @@
+schema {
+  query: InternalQuery
+  mutation: InternalMutation
+}
+
+directive @cost(
+  complexity: Int! = 1
+  multipliers: [MultiplierPath!]
+) on FIELD_DEFINITION
+enum DayOfWeek {
+  SUNDAY
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+}
+
+type InternalMutation {
+  setDaysOfWeek(days: [DayOfWeek]!): Boolean!
+}
+
+type InternalQuery {
+  daysOfWeek: [DayOfWeek]!
+}
+
+scalar MultiplierPath
+
